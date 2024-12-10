@@ -1,0 +1,35 @@
+Specification:
+A database management system (DBMS) is needed with the required capabilities: the ability to return a list of records matching a provided filter, to add a record, to delete all records 
+under a provided filter, to receive a system response if there is at least one record matching a provided filter, and to modify all records under a provided filter, with a provided field/value pair. 
+The database to be accessed will be stored in a text file with the following values: field names, field data types, and database records. The DBMS cannot be dependent on the content of the
+data file, but rather the format, and must be capable of working with various database files.
+ 
+System Perspectives:
+The customer may want this system because they need a system that efficiently organizes and recalls recorded information for their own business, or as a system they can market to other businesses.
+The user will expect this system to retrieve the accurate information, handle it's given tasks without crash or error, and retrieve the information in a timely manner.
+Our development team will gain intellctual property, as we have never developed a DBMS before, as well as payment.
+
+Development Environment
+Our development environment consists of the Java programming language and the IDE IntelliJ. We're most familiar with Java, and it's required for this assignment, and the familiar UI
+and compatibility of sharing files to GitHub makes IntelliJ an obvious choice for us. Our team will be sharing files with the use of GitHub because it makes getting updates to each other
+more efficient and organized. We will be communicating through in-person meetings and SMS text messaging, as we are in somewhat close proximity of each other, but may get busy and need
+to handle business over text instead.
+
+
+List of Concerns
+The unfamiliarity with a DBMS presents a significant challenge since it's not something we're accustomed to working with. 
+Given that this is new territory for us, we’ll need to invest time and effort into learning the fundamentals of database design, implementation, and management.
+This means we'll have to figure out not only how to create a database from scratch, but also how to optimize it for performance, ensure data integrity, and handle security concerns.
+
+Questions/Clarification
+Should names be established as a one item of data or three seperate items?
+Since we will be working with git repositories how can we submit our work on canvas?
+
+Biographies
+Cavanagh, Ellie: Ellie Cavanagh is a future 2025 B.S. Computer Science graduate from California Lutheran University. She has formally studied Java, Python, C++ and Visual Basic, as well as
+informally studied HTML, Javascript, CSS and C#. Her most complex program to date is a collaborative project creating a functional virtual copy of the boardgame Chutes & Ladders, which was
+programmed in Visual Basic and offered single and multiplayer modes with an interactive and responsive UI that involved the use of SFX.
+
+Afkir, Yasmine: Yasmine is a future 2026/2027 B.S. Computer Science and B.S. Mathematics graduate from California Lutheran University. Formally studied Java, Python, C++ and Ruby, as well as
+informally studied HTML, JS, CSS, Swift. Her most complex program is a simple recreation of the game solitaire she is now working on another side project, a Task Scheduler that is  Java-based 
+application equipped with AI algorithms, including genetic algorithms, to optimize task scheduling dynamically.

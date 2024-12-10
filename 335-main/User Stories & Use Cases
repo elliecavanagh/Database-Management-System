@@ -1,0 +1,132 @@
+Use Case: Selecting One or More Records
+This use case displays the required steps the DBMS needs to take to correctly process a user's request to see a number of records in the database.
+
+  User Story: One Record Found
+    This user story shows how the system is to process when the DBMS finds one record in the database matching the user-inputted field name/value pair.
+    Pre-Condition: Database contains one record with an id = 1034.
+    Post-Condition: Database is unmodified.
+      1. System receives id = 1034
+      2. System checks if there are any records in the database with a matching id - there is one
+      3. System displays record information to user.
+      4. End of Story.
+
+  User Story: Multiple Records Found
+    This user story shows how the system is to process when the DBMS finds multiple records in the database matching the user-inputted field name/value pair.
+    Pre-Condition: Database contains multiple records with street = Faculty St.
+    Post-Condition: Database is unmodified.
+      1. System receives street = Faculty St
+      2. System checks if there are any records in the database with matching street information - there are multiple. 
+      3. System displays all records to user.
+      4. End of Story.
+
+  User Story: No Records Found
+    This user story shows how the system is to process when the DBMS finds no records in the database matching the user-inputted field name/value pair.
+    Pre-Condition: Database contains no records with rent = true.
+    Post-Condition: Database is unmodified.
+      1. System receives rent = true.
+      2. System checks if there are any records in the database with matching rent information - there are none.
+      3. End of Story.
+
+Possible Next Use Case(s):
+
+Use Case: Inserting a Record
+This use case displays the required steps the DBMS needs to take to correctly process a user attempting to insert a record into the database.
+
+  User Story: Insert New Record
+    This user story shows how the system is to respond when a user inputs a record with a new primary key into the DBMS.
+    Pre-Condition: Database has no prior record containing the primary key 0068.
+    Post-Condition: Database now contains a record with the primary key 0068.
+      1. System receives record information, id = 0068, name = John Smith.
+      2. System checks if there is a previously entered record with a matching id number - there isn't.
+      3. System updates database with new record information.
+      4. End of Story.
+
+  User Story: Reject Duplicate Record
+    This user story shows how the system is to respond when a user inputs a record with an already recorded primary key into the DBMS.
+    Pre-Condition: Database contains a record with user-inputted primary key 0068.
+    Post-Condition: Database only contains one record with user-inputted primary key 0068.
+      1. System receives id = 0068, name = John Smith.
+      2. System checks if there is a previously entered record with a matching primary key - there is
+      3. System does not update database.
+      4. End of Story.
+
+Possible Next Use Case(s):
+
+Use Case: Deleting One or More Records
+This use case displays the required steps the DBMS needs to take to correctly process a user's request to delete a number of records in the database.
+
+  User Story: One Record Found
+
+  User Story: Multiple Records Found
+
+  User Story: No Records Found
+
+
+Use Case: Contains - change
+This use case displays the required steps the DBMS needs to take to correctly process a user's request to check if the database contains a record.
+  User Story: One Record Found
+  User Story: Multiple Records Found
+  User Story: No Records Found
+
+  User story: checking a record
+   This user story show how the system searcher for the record requested by the user with an existing primary key in the DBMS. city = Thousand Oaks
+   Pre-Condition: Database has an existing record containing the primary key that the user is searching for in the DBMS. 
+   Post-Condition: Database returns to the user that the record was found by returning true.
+   1. System checks for the  record matching the record the user is requesting 
+   2. System finds a matching record to the one requested 
+   3. System returns the record found to the user: city = Thousand Oaks
+   4. End of story 
+
+
+  User story: checking with multiple records found 
+   This user story show how the system searches for the record requested by the user and finds multiple matching records and how it handles it
+   Pre-Condition: Database contains multiple records matching the user requested record 
+   Post-Condition: Database returns to user all records found 
+   1. System checks for a record matching the record the user is requesting 
+   2. System finds multiple records matching the record requested 
+   3. System returns all records matching 
+   4. End of story.
+
+  User story: checking with zero record found 
+   This story how the system searches for the record the user inputed with a non existing primary key in the DBMS
+   Pre-Condition: Database has no existing record matching the input entered by the user.
+   Post-Condition: Database returns to the user that no record was found by returning false.
+   1. System checks for a matching record to the record requested by the user 
+   2. System finds zero matching record 
+   3. System returns False 
+   4. End of story.
+  
+
+
+Use Case: Update
+This use case displays the required steps the DBMS needs to take to correctly process a user's request to update matching database's records with new info
+  User Story: One Record Found
+  User Story: Multiple Records Found
+  User Story: No Records Found
+
+ User story: Updating record
+This user story show how the system is to respond when the user updates a record with an existing primary key in the DBMS.
+  Pre-Condition: Database has an existing record containing the primary key that the user wants to change: rent: false -> rent: true
+  Post-Condition: Database now has the updated version of record with the new user inputed primary key.
+  1. System receives existing record information,id = 0068, name = John Smith, address = 12346, street = Main Street, city = Thousand Oaks, state = CA, zip = 91360, rent: false.
+  2. System sees what the user would like to update. rent: false -> rent: true 
+  3. System updates database with new record information. id = 0068, name = John Smith, address = 12346, street = Main Street, city = Thousand Oaks, state = CA, zip = 91360, rent: false
+  4. End of story.
+
+ User story: updates multiple record 
+  This user story shows how the system updates more than one matching record upon user request.
+  Pre-Condition: Database has multiple existing records matching the the record that the user wanted to update 
+  Post-Condition: Database now has the updated version of the records that the user updated 
+  1. System matches multiple records matching the request then receives existing records information 
+  2. System asks which record the user would like to change 
+  3. System updates database with the new information
+  4. End of story.
+
+ User story: Updates zero matching records 
+  This story shows how the system updates zero records upon user request as no matching record was found.
+  Pre-Condition: Database has no existing record that match the input.
+  Post-Condition: Data base now has a record that match what the user wanted update 
+  1. System asks the user if the user would like to add a record that was not found  
+  2. System adds record with a primary key 
+  3. System updates database with new record information 
+  4. End of story
